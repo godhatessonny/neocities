@@ -1,0 +1,10 @@
+.sidebarLeft {
+    float: left;
+    width: 360px;
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
