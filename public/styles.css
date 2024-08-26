@@ -62,4 +62,10 @@ html {
     z-index: 1000;
   }
 
-  
+  .bottom {
+    position: absolute; bottom:
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: #F589A6;
+}
