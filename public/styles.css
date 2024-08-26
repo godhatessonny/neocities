@@ -22,6 +22,7 @@ html {
   }
   
   .intro-text {
+    font-size: 20px;
     color: #F589A6;
   }
   
@@ -31,10 +32,6 @@ html {
   
   .test-line {
     color: aqua;
-  }
-  
-  .center-content {
-    text-align: center;
   }
   
   .center-image {
