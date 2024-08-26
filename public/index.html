@@ -3,47 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      html {
-        background-image: url('starry.gif');
-        cursor: url('40823.png'), auto;
-      }
-      body {
-      }
-      h1 {
-        text-align: center;
-        color: Tomato;
-      }
-      .sidebarRight {
-        float: right;
-        width: 300px; 
-      }
-      .bodyDiv {
-        text-align: left; 
-      }
-    </style>
-    <title>Sundog's spew of nonsense</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Sundog's spew of nonsense</title>
+    <script>
+      function delayRedirect(event, url) {
+        event.preventDefault(); // prevents the default action
+        // show loading gif
+        document.getElementById("loading").style.display = "block";
+
+        setTimeout(function() {
+          window.location.href = url; // redirects after 1 second
+        }, 1000);
+      }
+    </script>
   </head>
   <body>
     <h1>Welcome to Wandering Meander!</h1>
     <div class="bodyDiv">
-    <p style="color: #F589A6;">
-      welcome to wanderingmeamnder<br>
-      if you know who i am, thats great. if you don't them i guess you'll find out here.<br>
-      i'd like to give credit to <a href="https://insect.christmas">insect.christmas</a> for my inspiration for the design of this website. i really hate modern web design.<br>
-      <br>
-      testin testingggg<br>
-    </p>
-  </div>  
+      <p class="intro-text">
+        welcome to wanderingmeamnder<br>
+        if you know who i am, thats great. if you don't them i guess you'll find out here.<br>
+        i'd like to give credit to <a href="https://insect.christmas" onclick="delayRedirect(event, this.href)">insect.christmas</a> for my inspiration for the design of this website. i really hate modern web design.<br>
+        <br>
+        testin testingggg<br>
+      </p>
+    </div>  
     <div class="sidebarRight">
-      <h2 style="color: purple">website directory:</h2>
-      <p style="color:aqua">test line</p>
+      <h2 class="directory-title">website directory:</h2>
+      <p class="test-line">test line</p>
     </div>
 
-    <div style="text-align: center;">
-      <img src="macosmade.gif" alt="macosmade" style="width:88px;height:31px;" class="center"><img src="misc-visualstudio.png" alt="vscode" style="width:88px;height:31px;" class="center"><br>
-      <img src="Under_construction_graphic.gif" alt="Under_construction_graphic" style="width:200px;height:150px;" class="center">
+    <div class="center-content">
+      <img src="macosmade.gif" alt="macosmade" class="center-image"><img src="misc-visualstudio.png" alt="vscode" class="center-image"><br>
+      <img src="Under_construction_graphic.gif" alt="Under_construction_graphic" class="large-image center-image">
     </div>  
+
+    <!-- loading gif -->
+    <div id="loading" class="loading">
+      <img src="loading.gif" alt="Loading...">
+    </div>
+    </div>
   </body>
 </html>
