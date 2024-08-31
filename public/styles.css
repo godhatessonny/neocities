@@ -12,23 +12,32 @@ html {
     color: Tomato;
   }
   
-  .sidebarRight {
-    float: right;
-    width: 300px; 
-  }
-  
   .bodyDiv {
     text-align: left; 
-  }
-  
-  .intro-text {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between elements */
+}
+
+.directory-title {
+    color: Tomato;
+    margin-top: 0; /* Remove default margin to align */
+    margin-bottom: 0; /* Remove default margin to align */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.intro-text {
     font-size: 20px;
     color: #F589A6;
-  }
-  
-  .directory-title {
-    color: purple;
-  }
+    margin: 0; /* Remove default margin */
+}
+
+/* Optional: Add some padding or margin to the sides of the sidebar */
+.sidebarRight {
+    float: right;
+    width: 300px; 
+    padding-left: 20px; /* Optional space to separate from text */
+}
   
   .test-line {
     color: aqua;
